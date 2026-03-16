@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-253.31033.138">
-    <data-source name="bdd_opticuisine@localhost" uuid="18f24590-710b-4282-b086-9bd7bb5289f2">
-      <database-info product="MySQL" version="5.5.5-10.11.14-MariaDB-0ubuntu0.24.04.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-9.5.0 (Revision: a7b3c94f50efbddb9f0dd69b3e0d1aaa25305cd6)" dbms="MARIADB" exact-version="10.11.14" exact-driver-version="9.5">
+  <component name="dataSourceStorageLocal" created-in="PS-252.28238.9">
+    <data-source name="sgdb@localhost" uuid="18f24590-710b-4282-b086-9bd7bb5289f2">
+      <database-info product="MySQL" version="8.0.45-0ubuntu0.24.04.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-9.5.0 (Revision: a7b3c94f50efbddb9f0dd69b3e0d1aaa25305cd6)" dbms="MYSQL" exact-version="8.0.45" exact-driver-version="9.5">
         <extra-name-characters>$</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>aurore</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="@" />
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="bdd_opticuisine" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
