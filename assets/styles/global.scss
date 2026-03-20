@@ -1,3 +1,111 @@
 @import "~bootstrap/scss/bootstrap";
+@import "form";
+@import "button";
+@import "navbar_footer";
+
+@font-face {
+    font-family: 'Molengo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Molengo-Regular.woff2') format('woff2'),
+    url('../fonts/Molengo-Regular.woff') format('woff'),
+    url('../fonts/Molengo-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/Montserrat-SemiBoldItalic.ttf') format('ttf');
+}
+
+:root {
+    --font-title: 'Molengo', sans-serif;
+    --font-body: 'Montserrat-Regular', sans-serif;
+    --font-legend: 'Montserrat-SemiBoldItalic', sans-serif;
+    --background-primary: #FFDDAB;
+    --background-secondary: #6B850C;
+    --accent-color: #FA812F;
+    --secondary-color: #628141;
+    --delete-color: #F6080C;
+    --text-clair: #FFFFFF;
+    --text-main: #000000;
+    --legend-color: #908F8F;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: var(--font-title);
+    color: var(--text-clair);
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-family: var(--font-title);
+    font-size: 1rem;
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+label {
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+input {
+    font-family: var(--font-legend);
+    color: var(--legend-color);
+    box-shadow: 2.5px 2.5px var(--secondary-color);
+}
+
+a {
+    font-family: var(--font-legend);
+    font-size: small;
+    color: var(--secondary-color);
+}
+
+small {
+    font-size: 0.875rem;
+}
+
+
 
 

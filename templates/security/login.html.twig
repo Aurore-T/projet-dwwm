@@ -3,20 +3,40 @@
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
-<form method="post">
+    <div class="d-flex justify-content-center">
+        <img src="{{ asset('/logo/logo_opticuisine.png') }}" alt="logo" loading="lazy" width="200"/>
+    </div>
+
+    <h2 class="mb-3 text-center">Opti'Cuisine</h2>
+
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail">Email</label>
-    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-    <label for="inputPassword">Password</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
-    <input type="hidden" name="_csrf_token" data-controller="csrf-protection" value="{{ csrf_token('authenticate') }}">
+    <form method="post" class="mx-auto" style="width: 400px">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control"
+                   autocomplete="email" required autofocus placeholder="Saisissez votre email">
+        </div>
 
-    <button class="btn btn-lg btn-primary" type="submit">
-        Sign in
-    </button>
-</form>
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control"
+                   autocomplete="current-password"
+                   required placeholder="Saisissez votre mot de passe">
+        </div>
+
+        <input type="hidden" name="_csrf_token" data-controller="csrf-protection"
+               value="{{ csrf_token('authenticate') }}">
+
+        <a href="#" class="text-center mb-3">Mot de passe oublié ?</a>
+
+        <button class="btn btn-primary align-self-center" style="width: 100px" type="submit">
+            Sign in
+        </button>
+
+        <a href="#" class="text-center my-3">Vous n'avez pas de compte ? <span style="color: #FA812F">S'inscrire</span></a>
+    </form>
+
 {% endblock %}

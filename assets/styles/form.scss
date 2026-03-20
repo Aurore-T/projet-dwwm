@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+
+    .form-control {
+        border: 2px solid var(--main-color);
+    }
+}
+
+body {
+    background: var(--background-primary);
+}
